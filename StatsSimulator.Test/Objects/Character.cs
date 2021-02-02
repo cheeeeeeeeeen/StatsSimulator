@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace StatsSimulator.Test
+namespace StatsSimulator.Test.Objects.Offense
 {
     [TestClass]
-    public class UnitTest1
+    public class Basic
     {
         [TestMethod]
         public void TestMethod1()
