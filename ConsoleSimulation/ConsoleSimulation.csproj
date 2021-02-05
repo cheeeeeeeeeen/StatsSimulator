@@ -6,4 +6,8 @@
     <StartupObject>ConsoleSimulation.Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\StatsSimulator\StatsSimulator.csproj" />
+  </ItemGroup>
+
 </Project>
