@@ -45,7 +45,7 @@ namespace StatsSimulator.Objects.Offense
         /// <returns>The damage output dealt</returns>
         protected virtual float PerformAction(Character target)
         {
-            return 0; // not working yet
+            return attackValue - target.defenseCapability.defenseValue;
         }
 
         /// <summary>
@@ -53,11 +53,11 @@ namespace StatsSimulator.Objects.Offense
         /// When the target is incompatible, fallback action will be used.
         /// Implementation here should be compatible with Offense.Basic.
         /// </summary>
-        /// <param name="target"></param>
-        /// <returns></returns>
+        /// <param name="target">The target affected of the action</param>
+        /// <returns>The damage output dealt</returns>
         protected virtual float FallbackAction(Character target)
         {
-            return 0; // not working yet
+            return 0f;
         }
     }
 }

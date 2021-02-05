@@ -9,10 +9,17 @@ namespace StatsSimulator.Objects
         /// <summary>
         /// The type of offensive capability this character has.
         /// </summary>
-        public Offense.Basic offense;
+        public Offense.Basic offenseCapability;
+        
+        /// <summary>
+        /// The type of defensive capability this character has.
+        /// </summary>
+        public Defense.Basic defenseCapability;
 
-        public Character()
+        public Character(Offense.Basic offense, Defense.Basic defense)
         {
+            offenseCapability = offense;
+            defenseCapability = defense;
         }
     }
 }
